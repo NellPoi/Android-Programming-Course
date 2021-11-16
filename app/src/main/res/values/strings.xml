@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Programming Course</string>
+    <string name="sub_LinearLayout">LinearLayout 布局</string>
+    <string name="sub_TableLayout">TableLayout 布局</string>
+</resources>
