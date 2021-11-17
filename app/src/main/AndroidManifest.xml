@@ -14,13 +14,17 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
-            android:label="@string/sub_TableLayout"
-            android:name=".SubActivity_TableLayout"
+            android:label="@string/sub_RelativeLayout"
+            android:name=".SubActivity_RelativeLayout"
             android:exported="false" />
         <activity
-            android:label="@string/sub_LinearLayout"
+            android:name=".SubActivity_TableLayout"
+            android:exported="false"
+            android:label="@string/sub_TableLayout" />
+        <activity
             android:name=".SubActivity_LinearLayout"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/sub_LinearLayout" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
