@@ -4,4 +4,5 @@
     <string name="sub_TableLayout">TableLayout 布局（表格布局）</string>
     <string name="sub_RelativeLayout">RelativeLayout 布局（相对布局）</string>
     <string name="sub_ConstraintLayout">ConstraintLayout 布局（约束布局）</string>
+    <string name="sub_Guideline">Guideline 基准线</string>
 </resources>

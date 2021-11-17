@@ -37,4 +37,10 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(MainActivity.this, SubActivity_ConstraintLayout.class);
         startActivity(intent);
     }
+
+    public void startMainActivity_Guideline(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_Guideline.class);
+        startActivity(intent);
+    }
 }
