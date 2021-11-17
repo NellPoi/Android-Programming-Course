@@ -14,9 +14,17 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
+            android:name=".SubActivity_Spinner"
+            android:exported="false"
+            android:label="@string/sub_Spinner" />
+        <activity
+            android:name=".SubActivity_ListView"
+            android:exported="false"
+            android:label="@string/sub_ListView" />
+        <activity
             android:name=".SubActivity_Guideline"
             android:exported="false"
-            android:label="@string/sub_Guideline"/>
+            android:label="@string/sub_Guideline" />
         <activity
             android:name=".SubActivity_ConstraintLayout"
             android:exported="false"

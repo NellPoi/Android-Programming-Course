@@ -43,4 +43,16 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(MainActivity.this, SubActivity_Guideline.class);
         startActivity(intent);
     }
+
+    public void startMainActivity_ListView(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_ListView.class);
+        startActivity(intent);
+    }
+
+    public void startMainActivity_Spinner(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_Spinner.class);
+        startActivity(intent);
+    }
 }

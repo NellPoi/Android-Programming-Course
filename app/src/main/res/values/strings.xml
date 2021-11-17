@@ -5,4 +5,29 @@
     <string name="sub_RelativeLayout">RelativeLayout 布局（相对布局）</string>
     <string name="sub_ConstraintLayout">ConstraintLayout 布局（约束布局）</string>
     <string name="sub_Guideline">Guideline 基准线</string>
+    <string name="sub_ListView">ListView 列表视图</string>
+    <string name="sub_Spinner">Spinner 下拉列表框</string>
+    <string-array name="sub_ListView_items">
+        <item>无线局域网</item>
+        <item>蓝牙</item>
+        <item>蜂窝网络</item>
+        <item>个人热点</item>
+        <item>VPN</item>
+        <item>通知</item>
+        <item>声音与触感</item>
+        <item>专注</item>
+        <item>屏幕使用时间</item>
+        <item>通用</item>
+        <item>控制中心</item>
+        <item>显示和亮度</item>
+        <item>主屏幕</item>
+        <item>辅助功能</item>
+        <item>墙纸</item>
+        <item>Siri与搜索</item>
+        <item>面容ID和密码</item>
+        <item>SOS紧急联络</item>
+        <item>暴露通知</item>
+        <item>电池</item>
+        <item>隐私</item>
+    </string-array>
 </resources>
