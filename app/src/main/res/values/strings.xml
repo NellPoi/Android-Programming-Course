@@ -30,4 +30,16 @@
         <item>电池</item>
         <item>隐私</item>
     </string-array>
+    <string-array name="sub_Spinner_items">
+        <item>永不</item>
+        <item>每小时</item>
+        <item>每天</item>
+        <item>工作日</item>
+        <item>周末</item>
+        <item>每两周</item>
+        <item>每月</item>
+        <item>每3个月</item>
+        <item>每6个月</item>
+        <item>每年</item>
+    </string-array>
 </resources>
