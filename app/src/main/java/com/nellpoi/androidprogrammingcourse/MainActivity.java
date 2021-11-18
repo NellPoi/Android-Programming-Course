@@ -12,6 +12,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /**
+         * 自动跳转到指定页面
+         * */
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_StateListDrawable.class);
+        startActivity(intent);
     }
 
     public void startMainActivity_LinearLayout(View view) {
@@ -53,6 +59,18 @@ public class MainActivity extends AppCompatActivity {
     public void startMainActivity_Spinner(View view) {
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, SubActivity_Spinner.class);
+        startActivity(intent);
+    }
+
+    public void startMainActivity_Resources(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_Resources.class);
+        startActivity(intent);
+    }
+
+    public void startMainActivity_StateListDrawable(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_StateListDrawable.class);
         startActivity(intent);
     }
 }

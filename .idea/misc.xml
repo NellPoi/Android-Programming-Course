@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3067484662576687" />
+        <entry key="app/src/main/res/drawable/state_state_list_drawable.xml" value="0.3195" />
+        <entry key="app/src/main/res/drawable/state_state_list_drawable_btn.xml" value="0.3195" />
+        <entry key="app/src/main/res/drawable/state_state_list_drawable_edittext.xml" value="0.189" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1505016722408027" />
         <entry key="app/src/main/res/layout/activity_sub_constraint_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sub_guideline.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_sub_linear_layout.xml" value="0.31567028985507245" />
         <entry key="app/src/main/res/layout/activity_sub_list_view.xml" value="0.13803680981595093" />
         <entry key="app/src/main/res/layout/activity_sub_relative_layout.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_sub_spinner.xml" value="0.17870884993587002" />
+        <entry key="app/src/main/res/layout/activity_sub_resources.xml" value="0.2515865820489574" />
+        <entry key="app/src/main/res/layout/activity_sub_spinner.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sub_state_list_drawable.xml" value="0.14213197969543148" />
         <entry key="app/src/main/res/layout/activity_sub_table_layout.xml" value="0.30694444444444446" />
       </map>
     </option>

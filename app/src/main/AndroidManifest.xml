@@ -14,6 +14,14 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
+            android:name=".SubActivity_StateListDrawable"
+            android:exported="false"
+            android:label="@string/sub_StateListDrawable" />
+        <activity
+            android:name=".SubActivity_Resources"
+            android:exported="false"
+            android:label="@string/sub_Resources" />
+        <activity
             android:name=".SubActivity_Spinner"
             android:exported="false"
             android:label="@string/sub_Spinner" />
