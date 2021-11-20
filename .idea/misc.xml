@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_sub_spinner.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sub_state_list_drawable.xml" value="0.14213197969543148" />
         <entry key="app/src/main/res/layout/activity_sub_table_layout.xml" value="0.30694444444444446" />
+        <entry key="app/src/main/res/layout/activity_sub_toast.xml" value="0.25" />
       </map>
     </option>
   </component>

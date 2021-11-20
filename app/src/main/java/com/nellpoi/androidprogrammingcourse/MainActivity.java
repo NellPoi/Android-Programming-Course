@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
          * 自动跳转到指定页面
          * */
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this, SubActivity_StateListDrawable.class);
+        intent.setClass(MainActivity.this, SubActivity_Toast.class);
         startActivity(intent);
     }
 
@@ -71,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
     public void startMainActivity_StateListDrawable(View view) {
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, SubActivity_StateListDrawable.class);
+        startActivity(intent);
+    }
+
+    public void startMainActivity_Toast(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SubActivity_Toast.class);
         startActivity(intent);
     }
 }

@@ -8,7 +8,8 @@
     <string name="sub_ListView">ListView 列表视图</string>
     <string name="sub_Spinner">Spinner 下拉列表框</string>
     <string name="sub_Resources">Android 应用资源</string>
-    <string name="sub_StateListDrawable">StateListDrawable 状态列表资源</string>
+    <string name="sub_StateListDrawable">StateListDrawable 资源</string>
+    <string name="sub_Toast">单击事件、Toast（提示信息框)</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>
