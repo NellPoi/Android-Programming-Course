@@ -14,9 +14,13 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
-            android:label="@string/sub_RadioButtonAndCheckBox"
-            android:name=".SubActivity_Radiobutton_And_CheckBox"
+            android:label="@string/sub_ProgressBarAndSeekBar"
+            android:name=".SubActivity_ProgressBarAndSeekBar"
             android:exported="false" />
+        <activity
+            android:name=".SubActivity_Radiobutton_And_CheckBox"
+            android:exported="false"
+            android:label="@string/sub_RadioButtonAndCheckBox" />
         <activity
             android:name=".SubActivity_Toast"
             android:exported="false"

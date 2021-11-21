@@ -17,7 +17,6 @@ public class SubActivity_Radiobutton_And_CheckBox extends AppCompatActivity {
     RadioGroup radioGroup;
     Button button;
     Button button1;
-
     CheckBox checkBox1, checkBox2, checkBox3, checkBox4;
 
     @Override
@@ -61,11 +60,18 @@ public class SubActivity_Radiobutton_And_CheckBox extends AppCompatActivity {
                  * 定义一个数组，将全部 CheckBox 整合起来，目的是为了和上面第一个按钮一样能够遍历去找到被选中的按钮
                  * */
                 CheckBox[] checkBoxes = new CheckBox[]{checkBox1, checkBox2, checkBox3, checkBox4};
-                for (int i = 0; i < checkBoxes.length; i++) {
+                for (CheckBox i : checkBoxes
+                ) {
+                    if (i.isChecked()) {
+                        str += i.getText().toString();
+                    }
+                }
+                /* 原示例此处使用过 for 循环方式实现，我替换成了 foreach*/
+                /*for (int i = 0; i < checkBoxes.length; i++) {
                     if (checkBoxes[i].isChecked()) {
                         str += checkBoxes[i].getText().toString();
                     }
-                }
+                }*/
                 Toast.makeText(SubActivity_Radiobutton_And_CheckBox.this, str, Toast.LENGTH_SHORT).show();
             }
         });
