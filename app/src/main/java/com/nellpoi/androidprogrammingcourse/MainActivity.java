@@ -15,22 +15,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    /*
-     * 注册列表内容，行为为全局，方便调用，减少代码量
-     * */
     private ListView myListview;
-    private ArrayList<String> list = new ArrayList<String>();
-    Intent intent;
+    private ArrayList<Class> activitiesNameList = new ArrayList<Class>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        intent = new Intent();// 初始化意图，用于传递点击事件
-        /*
-         * 全部子窗体列表名称，用于打开
-         * */
+        ArrayList<String> list = new ArrayList<>();
         String[] activitiesName = new String[]{
                 "LinearLayout 布局（线性布局）",
                 "TableLayout 布局（表格布局）",
@@ -43,11 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 "StateListDrawable 资源",
                 "单击事件、Toast（提示信息框)",
                 "单选按钮和复选按钮",
-                "ProgressBar（进度条）、SeekBar（拖动条）"
+                "ProgressBar（进度条）、SeekBar（拖动条）",
+                "RatingBar（评分条）"
         };
-        /* 自启事件 */
-        startActivity(intent.setClass(MainActivity.this, SubActivity_ProgressBarAndSeekBar.class));
-
         myListview = findViewById(R.id.demo_list);
         /*
          * 将全部activities注入ListView
@@ -59,7 +50,25 @@ public class MainActivity extends AppCompatActivity {
         }
         Toast.makeText(this, "加载完成，共加载" + Arrays.stream(activitiesName).count() + "个窗体", Toast.LENGTH_LONG).show();
 
+        Class[] activitiesClassName = {
+                SubActivity_LinearLayout.class,
+                SubActivity_TableLayout.class,
+                SubActivity_RelativeLayout.class,
+                SubActivity_ConstraintLayout.class,
+                SubActivity_Guideline.class,
+                SubActivity_ListView.class,
+                SubActivity_Spinner.class,
+                SubActivity_Resources.class,
+                SubActivity_StateListDrawable.class,
+                SubActivity_Toast.class,
+                SubActivity_Radiobutton_And_CheckBox.class,
+                SubActivity_ProgressBarAndSeekBar.class,
+                SubActivity_RatingBar.class
+        };
 
+        for (int i = 0; i < activitiesClassName.length; i++) {
+            activitiesNameList.add(activitiesClassName[i]);
+        }
         /*
          * 实例化适配器
          * */
@@ -68,53 +77,10 @@ public class MainActivity extends AppCompatActivity {
         myListview.setAdapter(myArrayAdapter);
         myListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View arg1, int arg2, long arg3) {
-                if (list.get(arg2).equals("LinearLayout 布局（线性布局）")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_LinearLayout.class));
-                }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                if (list.get(arg2).equals("TableLayout 布局（表格布局）")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_TableLayout.class));
-                }
-
-                if (list.get(arg2).equals("RelativeLayout 布局（相对布局）")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_RelativeLayout.class));
-                }
-
-                if (list.get(arg2).equals("ConstraintLayout 布局（约束布局）")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_ConstraintLayout.class));
-                }
-
-                if (list.get(arg2).equals("Guideline 基准线")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_Guideline.class));
-                }
-
-                if (list.get(arg2).equals("ListView 列表视图")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_ListView.class));
-                }
-
-                if (list.get(arg2).equals("Spinner 下拉列表框")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_Spinner.class));
-                }
-
-                if (list.get(arg2).equals("Android 应用资源")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_Resources.class));
-                }
-
-                if (list.get(arg2).equals("StateListDrawable 资源")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_StateListDrawable.class));
-                }
-
-                if (list.get(arg2).equals("单击事件、Toast（提示信息框)")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_Toast.class));
-                }
-
-                if (list.get(arg2).equals("单选按钮和复选按钮")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_Radiobutton_And_CheckBox.class));
-                }
-                if (list.get(arg2).equals("ProgressBar（进度条）、SeekBar（拖动条）")) {
-                    startActivity(intent.setClass(MainActivity.this, SubActivity_ProgressBarAndSeekBar.class));
-                }
+                Intent intent = new Intent(getApplication(), activitiesNameList.get(i));
+                startActivity(intent);
             }
         });
     }

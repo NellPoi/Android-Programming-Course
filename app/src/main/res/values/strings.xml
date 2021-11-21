@@ -12,6 +12,7 @@
     <string name="sub_Toast">单击事件、Toast（提示信息框)</string>
     <string name="sub_RadioButtonAndCheckBox">单选按钮和复选按钮</string>
     <string name="sub_ProgressBarAndSeekBar">ProgressBar（进度条）、SeekBar（拖动条）</string>
+    <string name="sub_RatingBar">RatingBar（评分条）</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>
