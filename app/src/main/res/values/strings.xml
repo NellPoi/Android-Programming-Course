@@ -14,6 +14,7 @@
     <string name="sub_ProgressBarAndSeekBar">ProgressBar（进度条）、SeekBar（拖动条）</string>
     <string name="sub_RatingBar">RatingBar（评分条）</string>
     <string name="sub_AutoCompleteTextView">AutoCompleteTextView（自动完成编辑框）</string>
+    <string name="sub_ArrayAdapter">Adapter接口1（ArrayAdapter）</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>

@@ -22,9 +22,5 @@ public class SubActivity_AutoCompleteTextView extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplication(), R.layout.activity_sub_auto_complete_text_view_item, strings);
         // 设置用于输入提示的数据列表
         autoCompleteTextView.setAdapter(adapter);
-
-
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getApplication(), R.layout.activity_sub_auto_complete_text_view_item, strings);
-        autoCompleteTextView.setAdapter(adapter);
     }
 }
