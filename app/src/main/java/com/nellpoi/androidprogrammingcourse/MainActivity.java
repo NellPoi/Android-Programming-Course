@@ -1,5 +1,6 @@
 package com.nellpoi.androidprogrammingcourse;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -37,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 "单击事件、Toast（提示信息框)",
                 "单选按钮和复选按钮",
                 "ProgressBar（进度条）、SeekBar（拖动条）",
-                "RatingBar（评分条）"
+                "RatingBar（评分条）",
+                "AutoCompleteTextView（自动完成编辑框）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -63,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_Toast.class,
                 SubActivity_Radiobutton_And_CheckBox.class,
                 SubActivity_ProgressBarAndSeekBar.class,
-                SubActivity_RatingBar.class
+                SubActivity_RatingBar.class,
+                SubActivity_AutoCompleteTextView.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -83,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        /* 初始化事件 */
+        startActivity(new Intent(getApplication(), SubActivity_AutoCompleteTextView.class));
     }
 
 }
