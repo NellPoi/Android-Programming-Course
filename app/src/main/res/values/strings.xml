@@ -17,6 +17,7 @@
     <string name="sub_ArrayAdapter">Adapter接口1（ArrayAdapter）</string>
     <string name="sub_SimpleAdapter">Adapter接口2（SimpleAdapter）</string>
     <string name="sub_GridView">GridView（网格视图）</string>
+    <string name="sub_CalendarView">CalendarView（日历视图）</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>

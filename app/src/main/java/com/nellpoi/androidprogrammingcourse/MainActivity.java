@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
                 "AutoCompleteTextView（自动完成编辑框）",
                 "Adapter接口1（ArrayAdapter）",
                 "Adapter接口2（SimpleAdapter）",
-                "GridView（网格视图）"
+                "GridView（网格视图）",
+                "CalendarView（日历视图）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -73,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_AutoCompleteTextView.class,
                 SubActivity_ArrayAdapter.class,
                 SubActivity_SimpleAdapter.class,
-                SubActivity_GridView.class
+                SubActivity_GridView.class,
+                SubActivity_CalendarView.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* 初始化事件 */
-        startActivity(new Intent(getApplication(), SubActivity_GridView.class));
+        startActivity(new Intent(getApplication(), SubActivity_CalendarView.class));
     }
 
 }
