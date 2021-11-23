@@ -14,9 +14,13 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
-            android:label="@string/sub_ArrayAdapter"
-            android:name=".SubActivity_ArrayAdapter"
+            android:label="@string/sub_SimpleAdapter"
+            android:name=".SubActivity_SimpleAdapter"
             android:exported="false" />
+        <activity
+            android:name=".SubActivity_ArrayAdapter"
+            android:exported="false"
+            android:label="@string/sub_ArrayAdapter" />
         <activity
             android:name=".SubActivity_AutoCompleteTextView"
             android:exported="false"

@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 "ProgressBar（进度条）、SeekBar（拖动条）",
                 "RatingBar（评分条）",
                 "AutoCompleteTextView（自动完成编辑框）",
-                "Adapter接口1（ArrayAdapter）"
+                "Adapter接口1（ArrayAdapter）",
+                "Adapter接口2（SimpleAdapter）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -69,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_ProgressBarAndSeekBar.class,
                 SubActivity_RatingBar.class,
                 SubActivity_AutoCompleteTextView.class,
-                SubActivity_ArrayAdapter.class
+                SubActivity_ArrayAdapter.class,
+                SubActivity_SimpleAdapter.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* 初始化事件 */
-        startActivity(new Intent(getApplication(), SubActivity_ArrayAdapter.class));
+        startActivity(new Intent(getApplication(), SubActivity_SimpleAdapter.class));
     }
 
 }
