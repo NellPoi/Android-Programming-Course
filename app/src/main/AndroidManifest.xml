@@ -14,9 +14,13 @@
         android:theme="@style/Theme.AndroidProgrammingCourse"
         tools:targetApi="31">
         <activity
-            android:label="@string/sub_SimpleAdapter"
-            android:name=".SubActivity_SimpleAdapter"
+            android:label="@string/sub_GridView"
+            android:name=".SubActivity_GridView"
             android:exported="false" />
+        <activity
+            android:name=".SubActivity_SimpleAdapter"
+            android:exported="false"
+            android:label="@string/sub_SimpleAdapter" />
         <activity
             android:name=".SubActivity_ArrayAdapter"
             android:exported="false"

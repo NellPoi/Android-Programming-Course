@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 "RatingBar（评分条）",
                 "AutoCompleteTextView（自动完成编辑框）",
                 "Adapter接口1（ArrayAdapter）",
-                "Adapter接口2（SimpleAdapter）"
+                "Adapter接口2（SimpleAdapter）",
+                "GridView（网格视图）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -71,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_RatingBar.class,
                 SubActivity_AutoCompleteTextView.class,
                 SubActivity_ArrayAdapter.class,
-                SubActivity_SimpleAdapter.class
+                SubActivity_SimpleAdapter.class,
+                SubActivity_GridView.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* 初始化事件 */
-        startActivity(new Intent(getApplication(), SubActivity_SimpleAdapter.class));
+        startActivity(new Intent(getApplication(), SubActivity_GridView.class));
     }
 
 }
