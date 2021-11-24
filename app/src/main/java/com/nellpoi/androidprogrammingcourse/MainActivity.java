@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 "Adapter接口1（ArrayAdapter）",
                 "Adapter接口2（SimpleAdapter）",
                 "GridView（网格视图）",
-                "CalendarView（日历视图）"
+                "CalendarView（日历视图）",
+                "DatePicker（日期选择器）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_ArrayAdapter.class,
                 SubActivity_SimpleAdapter.class,
                 SubActivity_GridView.class,
-                SubActivity_CalendarView.class
+                SubActivity_CalendarView.class,
+                SubActivity_DatePicker.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -96,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* 初始化事件 */
-        startActivity(new Intent(getApplication(), SubActivity_CalendarView.class));
+        startActivity(new Intent(getApplication(), SubActivity_DatePicker.class));
     }
 
 }

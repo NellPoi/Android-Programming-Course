@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    tools:context=".SubActivity_ListView">
+    tools:context=".SubActivity_ListView"
+    android:theme="@style/Theme.AndroidProgrammingCourse">
 
     <TextView
         android:id="@+id/title"

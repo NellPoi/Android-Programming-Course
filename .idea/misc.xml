@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_sub_auto_complete_text_view_text.xml" value="0.14792646430098333" />
         <entry key="app/src/main/res/layout/activity_sub_calendar_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sub_constraint_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_sub_date_picker.xml" value="0.2681992337164751" />
         <entry key="app/src/main/res/layout/activity_sub_grid_view.xml" value="0.2937443336355394" />
         <entry key="app/src/main/res/layout/activity_sub_grid_view_item.xml" value="0.15006412997007268" />
         <entry key="app/src/main/res/layout/activity_sub_guideline.xml" value="0.335" />
@@ -23,11 +24,11 @@
         <entry key="app/src/main/res/layout/activity_sub_list_view.xml" value="0.13803680981595093" />
         <entry key="app/src/main/res/layout/activity_sub_progress_bar_and_seek_bar.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/activity_sub_radiobutton_and_check_box.xml" value="0.625" />
-        <entry key="app/src/main/res/layout/activity_sub_rating_bar.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_sub_rating_bar.xml" value="0.2966101694915254" />
         <entry key="app/src/main/res/layout/activity_sub_relative_layout.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_sub_resources.xml" value="0.2515865820489574" />
         <entry key="app/src/main/res/layout/activity_sub_simple_adapter.xml" value="0.15177426250534418" />
-        <entry key="app/src/main/res/layout/activity_sub_simple_adapter_item.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/activity_sub_simple_adapter_item.xml" value="0.17073170731707318" />
         <entry key="app/src/main/res/layout/activity_sub_spinner.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_sub_state_list_drawable.xml" value="0.14213197969543148" />
         <entry key="app/src/main/res/layout/activity_sub_table_layout.xml" value="0.30694444444444446" />
