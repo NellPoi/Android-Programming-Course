@@ -1,101 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.nellpoi.androidprogrammingcourse">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidProgrammingCourse"
-        tools:targetApi="31">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SubActivity_Dialog1"
+            android:label="@string/sub_Dialog"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_ScrollView"
-            android:exported="false"
-            android:label="@string/sub_ScrollView" />
+            android:label="@string/sub_ScrollView"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_DatePicker"
-            android:exported="false"
-            android:label="@string/sub_DatePicker" />
+            android:label="@string/sub_DatePicker"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
-            android:label="@string/sub_CalendarView"
             android:name=".SubActivity_CalendarView"
-            android:exported="false" />
+            android:label="@string/sub_CalendarView"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_GridView"
-            android:exported="false"
-            android:label="@string/sub_GridView" />
+            android:label="@string/sub_GridView"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_SimpleAdapter"
-            android:exported="false"
-            android:label="@string/sub_SimpleAdapter" />
+            android:label="@string/sub_SimpleAdapter"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_ArrayAdapter"
-            android:exported="false"
-            android:label="@string/sub_ArrayAdapter" />
+            android:label="@string/sub_ArrayAdapter"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_AutoCompleteTextView"
-            android:exported="false"
-            android:label="@string/sub_AutoCompleteTextView" />
+            android:label="@string/sub_AutoCompleteTextView"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_RatingBar"
-            android:exported="false"
-            android:label="@string/sub_RatingBar" />
+            android:label="@string/sub_RatingBar"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_ProgressBarAndSeekBar"
-            android:exported="false"
-            android:label="@string/sub_ProgressBarAndSeekBar" />
+            android:label="@string/sub_ProgressBarAndSeekBar"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_Radiobutton_And_CheckBox"
-            android:exported="false"
-            android:label="@string/sub_RadioButtonAndCheckBox" />
+            android:label="@string/sub_RadioButtonAndCheckBox"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_Toast"
-            android:exported="false"
-            android:label="@string/sub_Toast" />
+            android:label="@string/sub_Toast"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_StateListDrawable"
-            android:exported="false"
-            android:label="@string/sub_StateListDrawable" />
+            android:label="@string/sub_StateListDrawable"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_Resources"
-            android:exported="false"
-            android:label="@string/sub_Resources" />
+            android:label="@string/sub_Resources"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_Spinner"
-            android:exported="false"
-            android:label="@string/sub_Spinner" />
+            android:label="@string/sub_Spinner"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_ListView"
-            android:exported="false"
-            android:label="@string/sub_ListView" />
+            android:label="@string/sub_ListView"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_Guideline"
-            android:exported="false"
-            android:label="@string/sub_Guideline" />
+            android:label="@string/sub_Guideline"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_ConstraintLayout"
-            android:exported="false"
-            android:label="@string/sub_ConstraintLayout" />
+            android:label="@string/sub_ConstraintLayout"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_RelativeLayout"
-            android:exported="false"
-            android:label="@string/sub_RelativeLayout" />
+            android:label="@string/sub_RelativeLayout"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_TableLayout"
-            android:exported="false"
-            android:label="@string/sub_TableLayout" />
+            android:label="@string/sub_TableLayout"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
         <activity
             android:name=".SubActivity_LinearLayout"
-            android:exported="false"
-            android:label="@string/sub_LinearLayout" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:label="@string/sub_LinearLayout"
+            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

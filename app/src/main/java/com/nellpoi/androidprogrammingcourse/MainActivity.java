@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -46,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 "GridView（网格视图）",
                 "CalendarView（日历视图）",
                 "DatePicker（日期选择器）",
-                "ScrollView（滚动视图）"
+                "ScrollView（滚动视图）",
+                "对话框1"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -79,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_GridView.class,
                 SubActivity_CalendarView.class,
                 SubActivity_DatePicker.class,
-                SubActivity_ScrollView.class
+                SubActivity_ScrollView.class,
+                SubActivity_Dialog1.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -94,13 +95,11 @@ public class MainActivity extends AppCompatActivity {
         myListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 Intent intent = new Intent(getApplication(), activitiesNameList.get(i));
                 startActivity(intent);
             }
         });
-        /* 初始化事件 */
-        startActivity(new Intent(getApplication(), SubActivity_ScrollView.class));
+        startActivity(new Intent(getApplication(), SubActivity_Dialog1.class));
     }
 
 }
