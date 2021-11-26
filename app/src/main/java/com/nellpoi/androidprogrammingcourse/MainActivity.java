@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 "CalendarView（日历视图）",
                 "DatePicker（日期选择器）",
                 "ScrollView（滚动视图）",
-                "对话框1"
+                "对话框1",
+                "对话框2"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -80,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_CalendarView.class,
                 SubActivity_DatePicker.class,
                 SubActivity_ScrollView.class,
-                SubActivity_Dialog1.class
+                SubActivity_Dialog1.class,
+                SubActivity_Dialog2.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        startActivity(new Intent(getApplication(), SubActivity_Dialog1.class));
+        startActivity(new Intent(getApplication(), SubActivity_Dialog2.class));
     }
 
 }

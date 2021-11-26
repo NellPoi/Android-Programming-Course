@@ -10,9 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SubActivity_Dialog2"
+            android:label="@string/sub_Dialog2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
+        <activity
             android:name=".SubActivity_Dialog1"
-            android:label="@string/sub_Dialog"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:label="@string/sub_Dialog1"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -20,7 +27,7 @@
         <activity
             android:name=".SubActivity_ScrollView"
             android:label="@string/sub_ScrollView"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -28,7 +35,7 @@
         <activity
             android:name=".SubActivity_DatePicker"
             android:label="@string/sub_DatePicker"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -36,7 +43,7 @@
         <activity
             android:name=".SubActivity_CalendarView"
             android:label="@string/sub_CalendarView"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -44,7 +51,7 @@
         <activity
             android:name=".SubActivity_GridView"
             android:label="@string/sub_GridView"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -52,7 +59,7 @@
         <activity
             android:name=".SubActivity_SimpleAdapter"
             android:label="@string/sub_SimpleAdapter"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -60,7 +67,7 @@
         <activity
             android:name=".SubActivity_ArrayAdapter"
             android:label="@string/sub_ArrayAdapter"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -68,7 +75,7 @@
         <activity
             android:name=".SubActivity_AutoCompleteTextView"
             android:label="@string/sub_AutoCompleteTextView"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -76,7 +83,7 @@
         <activity
             android:name=".SubActivity_RatingBar"
             android:label="@string/sub_RatingBar"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -84,7 +91,7 @@
         <activity
             android:name=".SubActivity_ProgressBarAndSeekBar"
             android:label="@string/sub_ProgressBarAndSeekBar"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -92,7 +99,7 @@
         <activity
             android:name=".SubActivity_Radiobutton_And_CheckBox"
             android:label="@string/sub_RadioButtonAndCheckBox"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -100,7 +107,7 @@
         <activity
             android:name=".SubActivity_Toast"
             android:label="@string/sub_Toast"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -108,7 +115,7 @@
         <activity
             android:name=".SubActivity_StateListDrawable"
             android:label="@string/sub_StateListDrawable"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -116,7 +123,7 @@
         <activity
             android:name=".SubActivity_Resources"
             android:label="@string/sub_Resources"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -124,7 +131,7 @@
         <activity
             android:name=".SubActivity_Spinner"
             android:label="@string/sub_Spinner"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -132,7 +139,7 @@
         <activity
             android:name=".SubActivity_ListView"
             android:label="@string/sub_ListView"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -140,7 +147,7 @@
         <activity
             android:name=".SubActivity_Guideline"
             android:label="@string/sub_Guideline"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -148,7 +155,7 @@
         <activity
             android:name=".SubActivity_ConstraintLayout"
             android:label="@string/sub_ConstraintLayout"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -156,7 +163,7 @@
         <activity
             android:name=".SubActivity_RelativeLayout"
             android:label="@string/sub_RelativeLayout"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -164,7 +171,7 @@
         <activity
             android:name=".SubActivity_TableLayout"
             android:label="@string/sub_TableLayout"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
@@ -172,7 +179,7 @@
         <activity
             android:name=".SubActivity_LinearLayout"
             android:label="@string/sub_LinearLayout"
-            android:parentActivityName="com.nellpoi.androidprogrammingcourse.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
