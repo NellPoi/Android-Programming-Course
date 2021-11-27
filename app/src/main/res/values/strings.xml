@@ -22,6 +22,7 @@
     <string name="sub_ScrollView">ScrollView（滚动视图）</string>
     <string name="sub_Dialog1">对话框1</string>
     <string name="sub_Dialog2">对话框1</string>
+    <string name="sub_Notification">Notification（通知）</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>
