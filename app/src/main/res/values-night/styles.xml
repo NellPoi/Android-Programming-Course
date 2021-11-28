@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!--    <style name="Theme.AppCompat.DayLight" parent="Theme.AppCompat.Light.DarkActionBar">-->
         <!--    <style name="Theme.MaterialComponents.DayNight" parent="Theme.AppCompat.Light.DarkActionBar">-->
         <!-- Customize your theme here. -->
@@ -9,7 +9,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/pink_200</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
         <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
         <!-- 解决 Android 10 全面屏底部小横条的背景颜色问题-->
         <item name="android:navigationBarColor">@android:color/transparent</item>

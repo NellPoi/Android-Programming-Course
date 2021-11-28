@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 "对话框1",
                 "对话框2",
                 "Notification（通知）",
-                "启动、关闭Activity"
+                "启动、关闭Activity",
+                "Intent的使用：一键拨号"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -85,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_Dialog1.class,
                 SubActivity_Dialog2.class,
                 SubActivity_Notification.class,
-                SubActivity_Activity.class
+                SubActivity_Intent_StartAndFinishActivity_Start.class,
+                SubActivity_Intent_ACTION_DIAL.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        startActivity(new Intent(getApplication(), SubActivity_Activity.class));
+//        startActivity(new Intent(getApplication(), SubActivity_Intent_ACTION_DIAL.class));
     }
 
 }

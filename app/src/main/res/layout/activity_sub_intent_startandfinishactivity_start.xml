@@ -6,17 +6,11 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".SubActivity_Activity_intent">
+    tools:context=".SubActivity_Intent_StartAndFinishActivity_Start">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="返回" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_android_24" />
-
+        android:text="启动 Activity" />
 </LinearLayout>
