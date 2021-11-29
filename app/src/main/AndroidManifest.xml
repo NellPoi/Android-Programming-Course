@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SubActivity_Intent_ACTION_VIEW"
+            android:label="@string/sub_Activity_Intent_ACTION_VIEW">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
+        <activity
             android:name=".SubActivity_Intent_ACTION_DIAL"
             android:label="@string/sub_Activity_Intent_ACTION_DIAL">
             <meta-data

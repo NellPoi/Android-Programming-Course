@@ -59,6 +59,4 @@ public class SubActivity_Intent_ACTION_DIAL extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + editText.getText().toString()));
         startActivity(intent);
     }
-
-
 }
