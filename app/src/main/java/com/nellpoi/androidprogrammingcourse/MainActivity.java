@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 "Notification（通知）",
                 "启动、关闭Activity",
                 "Intent的使用：一键拨号",
-                "Intent的使用：一键访问网络"
+                "Intent的使用：一键访问网络",
+                "Activity之间传递数据1"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -89,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_Notification.class,
                 SubActivity_Intent_StartAndFinishActivity_Start.class,
                 SubActivity_Intent_ACTION_DIAL.class,
-                SubActivity_Intent_ACTION_VIEW.class
+                SubActivity_Intent_ACTION_VIEW.class,
+                SubActivity_Intent_Extra_Start.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {

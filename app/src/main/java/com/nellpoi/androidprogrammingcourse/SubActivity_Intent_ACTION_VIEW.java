@@ -22,10 +22,10 @@ public class SubActivity_Intent_ACTION_VIEW extends AppCompatActivity {
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if (i == KeyEvent.KEYCODE_ENTER) {
-                    String url = "http://www.baidu.com/s?wd=" + editText.getText().toString();
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    Uri uri = Uri.parse("https://" + "www.baidu.com/s?wd=" + editText.getText().toString());
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
-                    return true;
+                    return false;
                 }
                 return false;
             }
