@@ -52,8 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="用户名："
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/info_user"
@@ -61,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="xxx"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -90,8 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="密码："
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/info_pwd"
@@ -99,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="xxx"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
