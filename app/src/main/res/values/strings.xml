@@ -28,6 +28,7 @@
     <string name="sub_Activity_Intent_ACTION_VIEW">Intent的使用：一键访问网络</string>
     <string name="sub_Activity_Intent_Extra">Activity之间传递数据1</string>
     <string name="sub_IdealWeightCalculator">标准体重计算器</string>
+    <string name="sub_StartActivityForResult">启动 Activity 并返回结果</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>

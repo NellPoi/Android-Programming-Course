@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".SubActivity_StartActivityForResult_Start">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/control"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:text="强强联合，亚马逊云科技与 Meta 达成合作协议：加速后者 AI 团队的研发速度"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="2021-12-02 13:56:44    IT之家(江离)"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text="IT之家 12 月 2 日消息，据 Businesswire 报道，亚马逊云科技（AWS ）宣布与 Meta 达成合作协议，Meta 将使用 AWS 经验证的基础设施和综合功能来补充其现有的本地基础设施，并将扩大其对 AWS 计算、存储、数据库和安全服务的使用。"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sub_startactivityforresult_img1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="10dp"
+                android:text="据介绍，Meta 将在亚马逊云科技上运行第三方合作应用，并使用云服务支持其收购的已在使用亚马逊云科技的企业。Meta 还将使用 AWS 的计算服务来加速其 AI 团队的研发。
+
+此外，Meta 和 AWS 将进一步优化 PyTorch 性能及其与核心托管服务的集成，合作为运行 PyTorch 的客户提高性能，并加速开发人员构建、训练、部署和操作人工智能、机器学习模型的方式，让开发人员更轻松地构建用于自然语言处理和计算机视觉的大规模深度学习模型。
+
+IT之家了解到，亚马逊的高管 Kathrin Renz 表示，Meta 和 AWS 在过去五年中一直在扩大合作，通过这项协议，AWS 将继续帮助 Meta 研发，推动创新，并与第三方和开源社区大规模合作。"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新评论"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/commit_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="300dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_person_24" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    app:layout_constraintBottom_toBottomOf="@+id/commit_icon"
+                    app:layout_constraintStart_toEndOf="@+id/commit_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/commit_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/commit_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户Test01" />
+
+                    <TextView
+                        android:id="@+id/commit_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="IT之家网友 2021-12-02 15:20" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4楼"
+                    android:id="@+id/lou"
+                    app:layout_constraintTop_toTopOf="@id/commit_person"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/commit_main"
+                    app:layout_constraintTop_toBottomOf="@id/commit_person"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/lou"
+                    app:layout_constraintStart_toStartOf="@+id/commit_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="曲面屏除了看起来炫一点，其他没什么优点。易损坏，配件贵，信息显示不直观……" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/commit_person"
+                    app:layout_constraintStart_toStartOf="@id/commit_person"
+                    app:layout_constraintEnd_toEndOf="@id/commit_person"
+                    android:gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:text="我们是有底线的"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/control"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="说说你的看法" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:text="提交" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

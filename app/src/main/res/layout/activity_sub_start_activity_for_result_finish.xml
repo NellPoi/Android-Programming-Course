@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".SubActivity_StartActivityForResult_Finish">
+
+    <androidx.cardview.widget.CardView
+        android:onClick="back"
+        android:id="@+id/article_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:lineHeight="16dp"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="查看全文：「IQOO Neo 系列心机现身 Google Play，搭载小龙 888 与 12GB 内存」" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/commit_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/article_back"
+        app:layout_constraintStart_toStartOf="@+id/article_back"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/article_back_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部评论"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/article_back_title"
+            app:layout_constraintBottom_toBottomOf="@id/article_back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/article_back_radiogroup">
+
+            <RadioButton
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新"
+                android:id="@+id/article_back_radiogroup_btn1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最早"
+                android:id="@+id/article_back_radiogroup_btn2" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/commit_body"
+        app:layout_constraintTop_toBottomOf="@+id/commit_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/commit_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardCornerRadius="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_24" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="@+id/commit_icon"
+            app:layout_constraintStart_toEndOf="@+id/commit_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/commit_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户Test01" />
+
+            <TextView
+                android:id="@+id/commit_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="IT之家网友 2021-12-02 15:20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4楼"
+            app:layout_constraintTop_toTopOf="@id/commit_person"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/commit_content"
+            app:layout_constraintTop_toBottomOf="@id/commit_person"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/lou"
+            app:layout_constraintStart_toStartOf="@+id/commit_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="曲面屏除了看起来炫一点，其他没什么优点。易损坏，配件贵，信息显示不直观……" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/sub_click"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改评论"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/commit_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="返回文章"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

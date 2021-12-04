@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 "Intent的使用：一键拨号",
                 "Intent的使用：一键访问网络",
                 "Activity之间传递数据1",
-                "标准体重计算器"
+                "标准体重计算器",
+                "启动 Activity 并返回结果"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -93,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_Intent_ACTION_DIAL.class,
                 SubActivity_Intent_ACTION_VIEW.class,
                 SubActivity_Intent_Extra_Start.class,
-                SubActivity_IdealWeightCalculator_Start.class
+                SubActivity_IdealWeightCalculator_Start.class,
+                SubActivity_StartActivityForResult_Start.class
         };
 
         for (int i = 0; i < activitiesClassName.length; i++) {
