@@ -29,6 +29,7 @@
     <string name="sub_Activity_Intent_Extra">Activity之间传递数据1</string>
     <string name="sub_IdealWeightCalculator">标准体重计算器</string>
     <string name="sub_StartActivityForResult">启动 Activity 并返回结果</string>
+    <string name="sub_UserAvatarSelector">带头像的用户注册页面</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>

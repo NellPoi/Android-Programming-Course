@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/subactivity_intent_action_view_img1" />
+                    android:src="@drawable/sub_intent_action_view_img1" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
@@ -105,7 +105,7 @@
                     android:id="@+id/imageView9"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/subactivity_intent_action_view_icon1"
+                    android:src="@drawable/sub_intent_action_view_icon1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 

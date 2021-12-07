@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     private ListView myListview;
@@ -53,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 "Intent的使用：一键访问网络",
                 "Activity之间传递数据1",
                 "标准体重计算器",
-                "启动 Activity 并返回结果"
+                "启动 Activity 并返回结果",
+                "带头像的用户注册页面"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -61,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
          * */
         for (String i :
                 activitiesName) {
-            Log.e("NellPoi：", "创建了: " + i + " 窗体");
+//            Log.e("NellPoi：", "创建了: " + i + " 窗体");
             list.add(i);
         }
-        Toast.makeText(this, "加载完成，共加载" + Arrays.stream(activitiesName).count() + "个窗体", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "加载完成，共加载" + Arrays.stream(activitiesName).count() + "个窗体", Toast.LENGTH_LONG).show();
 
         Class[] activitiesClassName = {
                 SubActivity_LinearLayout.class,
@@ -95,9 +93,9 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_Intent_ACTION_VIEW.class,
                 SubActivity_Intent_Extra_Start.class,
                 SubActivity_IdealWeightCalculator_Start.class,
-                SubActivity_StartActivityForResult_Start.class
+                SubActivity_StartActivityForResult_Start.class,
+                SubActivity_UserAvatarSelector.class
         };
-
         for (int i = 0; i < activitiesClassName.length; i++) {
             activitiesNameList.add(activitiesClassName[i]);
         }
