@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/ic_baseline_chrome_reader_mode_24"
+        android:gravity="center"
+        android:drawablePadding="10dp" />
+</LinearLayout>
