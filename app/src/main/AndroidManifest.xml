@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SubActivity_DynamicFragment"></activity>
         <activity
             android:name=".SubActivity_StaticFragment"
             android:label="@string/sub_StaticFragment">

@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 "标准体重计算器",
                 "启动 Activity 并返回结果",
                 "带头像的用户注册页面",
-                "Fragment静态用法"
+                "Fragment静态用法",
+                "Fragment动态用法"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -96,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_IdealWeightCalculator_Start.class,
                 SubActivity_StartActivityForResult_Start.class,
                 SubActivity_UserAvatarSelector.class,
-                SubActivity_StaticFragment.class
+                SubActivity_StaticFragment.class,
+                SubActivity_DynamicFragment.class
         };
         for (int i = 0; i < activitiesClassName.length; i++) {
             activitiesNameList.add(activitiesClassName[i]);
