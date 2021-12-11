@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="喜欢"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_baseline_open_in_new_24"
+        android:title="分享"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:icon="@drawable/ic_baseline_playlist_add_24"
+        android:title="新增"
+        app:showAsAction="never">
+
+    </item>
+</menu>
