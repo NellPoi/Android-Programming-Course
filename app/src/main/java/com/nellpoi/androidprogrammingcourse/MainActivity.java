@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 "Fragment静态用法",
                 "Fragment动态用法",
                 "ToolBar的使用",
-                "TextInputLayout（增强型文本输入）"
+                "TextInputLayout（增强型文本输入）",
+                "NavigationView（导航抽屉）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -102,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_StaticFragment.class,
                 SubActivity_DynamicFragment.class,
                 SubActivity_Toolbar.class,
-                SubActivity_TextInputLayout.class
+                SubActivity_TextInputLayout.class,
+                SubActivity_NavigationView.class
         };
         for (int i = 0; i < activitiesClassName.length; i++) {
             activitiesNameList.add(activitiesClassName[i]);

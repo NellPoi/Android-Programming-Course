@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SubActivity_NavigationView"
+            android:label="@string/sub_NavigationView">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nellpoi.androidprogrammingcourse.MainActivity" />
+        </activity>
+        <activity
             android:name=".SubActivity_TextInputLayout"
             android:label="@string/sub_TextInputLayout">
             <meta-data
