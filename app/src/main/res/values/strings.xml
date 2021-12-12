@@ -33,6 +33,7 @@
     <string name="sub_StaticFragment">Fragment静态用法</string>
     <string name="sub_DynamicFragment">Fragment动态用法</string>
     <string name="sub_Toolbar">ToolBar的使用</string>
+    <string name="sub_TextInputLayout">TextInputLayout（增强型文本输入）</string>
     <string-array name="sub_ListView_items">
         <item>无线局域网</item>
         <item>蓝牙</item>

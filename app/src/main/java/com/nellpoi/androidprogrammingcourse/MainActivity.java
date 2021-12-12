@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 "带头像的用户注册页面",
                 "Fragment静态用法",
                 "Fragment动态用法",
-                "ToolBar的使用"
+                "ToolBar的使用",
+                "TextInputLayout（增强型文本输入）"
         };
         myListview = findViewById(R.id.demo_list);
         /*
@@ -100,7 +101,8 @@ public class MainActivity extends AppCompatActivity {
                 SubActivity_UserAvatarSelector.class,
                 SubActivity_StaticFragment.class,
                 SubActivity_DynamicFragment.class,
-                SubActivity_Toolbar.class
+                SubActivity_Toolbar.class,
+                SubActivity_TextInputLayout.class
         };
         for (int i = 0; i < activitiesClassName.length; i++) {
             activitiesNameList.add(activitiesClassName[i]);
